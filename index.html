@@ -1,1 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIP TRADER - Telegram Join</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, sans-serif; }
+        body { background-color: #f0f2f5; display: flex; justify-content: center; align-items: center; min-height: 100vh; padding: 20px; }
+        
+        .card { background: white; width: 100%; max-width: 450px; border-radius: 20px; padding: 30px; text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
+        
+        /* Logo Styling */
+        .logo-circle { width: 100px; height: 100px; background: black; border-radius: 50%; margin: 0 auto 15px; display: flex; flex-direction: column; align-items: center; justify-content: center; color: #f1c40f; font-weight: bold; border: 4px solid #fff; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+        
+        h1 { font-size: 24px; color: #333; margin-bottom: 5px; }
+        .verified { color: #3897f0; font-size: 18px; }
+        .subscribers { color: #666; font-size: 15px; margin-bottom: 15px; }
+        
+        /* Button Style & Animation */
+        .btn { 
+            display: block; 
+            background: #54a0ff; 
+            color: white; 
+            text-decoration: none; 
+            padding: 15px; 
+            border-radius: 12px; 
+            font-weight: bold; 
+            font-size: 18px; 
+            margin: 15px 0;
+            transition: 0.3s;
+            box-shadow: 0 4px 10px rgba(84, 160, 255, 0.3);
+            /* Animation yahan hai */
+            animation: moveInOut 1.5s infinite ease-in-out;
+        }
 
+        /* In-Out Movement (Pulse Effect) */
+        @keyframes moveInOut {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); } /* Thoda bada */
+            100% { transform: scale(1); }    /* Wapas normal */
+        }
+
+        .btn:hover { background: #2e86de; animation-play-state: paused; } /* Hover par animation ruk jayegi */
+
+        .tags-container { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; margin: 20px 0; }
+        .tag { padding: 6px 15px; border-radius: 20px; font-size: 11px; font-weight: bold; color: white; }
+        .tag-red { background: #d63031; }
+        .tag-black { background: #2d3436; }
+        .tag-green { background: #27ae60; }
+
+        .footer-info { font-size: 12px; color: #888; margin-top: 20px; border-top: 1px solid #eee; padding-top: 15px; }
+    </style>
+</head>
+<body>
+
+<div class="card">
+    <div class="logo-circle">
+        <span style="font-size: 20px;">VIP</span>
+        <span style="font-size: 12px; letter-spacing: 2px;">TRADER</span>
+    </div>
+
+    <h1>VIP TRADER <i class="fas fa-check-circle verified"></i></h1>
+    <p class="subscribers">78,127 subscribers</p>
+    
+    <p style="font-size: 14px;">📊 Exclusive insights & daily tips</p>
+
+    <a href="YOUR_LINK" class="btn">
+        <i class="fab fa-telegram-plane"></i> JOIN TELEGRAM CHANNEL
+    </a>
+
+    <p style="font-weight: bold; font-size: 13px;">
+        🔥 <span style="color: #d63031;">INTRADAY</span> | <span style="color: #0984e3;">OPTIONS</span> | <span style="color: #27ae60;">SWING ANALYSIS</span>
+    </p>
+
+    <div class="tags-container">
+        <span class="tag tag-red">NIFTY 50</span>
+        <span class="tag tag-red">BANKNIFTY</span>
+        <span class="tag tag-black">INTRADAY</span>
+        <span class="tag tag-black">OPTIONS</span>
+        <span class="tag tag-green">SWING TRADE</span>
+    </div>
+
+    <p style="font-size: 14px; color: #27ae60; font-weight: bold;">
+        ✅ Learn, Analyse & Grow
+    </p>
+
+    <a href="YOUR_LINK" class="btn">
+        <i class="fab fa-telegram-plane"></i> JOIN FREE TELEGRAM CHANNEL
+    </a>
+
+    <p style="font-size: 11px; color: #999;">If you have Telegram, you can view and join this channel right away.</p>
+
+    <div class="footer-info">
+      Ads Managed by <strong>@Adskillagency</strong>
+    </div>
+</div>
+
+</body>
+</html>
