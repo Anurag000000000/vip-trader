@@ -5,6 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VIP TRADER - Telegram Join</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <script>
+      !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+      n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+      document,'script','https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', 'YOUR_PIXEL_ID'); // Yahan apna Pixel ID replace karein
+      fbq('track', 'PageView');
+    </script>
+
     <style>
         * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, sans-serif; }
         body { background-color: #f0f2f5; display: flex; justify-content: center; align-items: center; min-height: 100vh; padding: 20px; }
@@ -66,7 +77,7 @@
     
     <p style="font-size: 14px;">📊 Exclusive insights & daily tips</p>
 
-    <a href="https://t.me/+MyCVbQMZAGpjYWY1" class="btn">
+    <a href="https://t.me/+MyCVbQMZAGpjYWY1" class="btn sub-event">
         <i class="fab fa-telegram-plane"></i> JOIN TELEGRAM CHANNEL
     </a>
 
@@ -86,15 +97,25 @@
         ✅ Learn, Analyse & Grow
     </p>
 
-    <a href="https://t.me/+MyCVbQMZAGpjYWY1" class="btn">
+    <a href="https://t.me/+MyCVbQMZAGpjYWY1" class="btn sub-event">
         <i class="fab fa-telegram-plane"></i> JOIN FREE TELEGRAM CHANNEL
     </a>
 
     <p style="font-size: 11px; color: #999;">If you have Telegram, you can view and join this channel right away.</p>
-    <div class="footer-info">
-      
-    </div>
+
+<div class="footer-info"></div>
 </div>
+
+<script>
+    document.querySelectorAll('.sub-event').forEach(function(button) {
+        button.addEventListener('click', function() {
+            if (typeof fbq !== 'undefined') {
+                fbq('track', 'Subscribe');
+                console.log('FB Subscribe Event Fired');
+            }
+        });
+    });
+</script>
 
 </body>
 </html>
