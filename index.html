@@ -1,43 +1,60 @@
+<p style="font-size: 14px; color: #27ae60; font-weight: bold; margin-bottom: 10px;">
+        ✅ 100% FREE Analysis Channel
+    </p>
+
+    <a href="https://t.me/+MyCVbQMZAGpjYWY1" target="_blank" class="btn sub-btn">
+        <i class="fab fa-telegram-plane"></i> JOIN FREE TELEGRAM
+    </a>
+
+    <p class="footer-info">By clicking, you will be redirected to Telegram app.</p>
+</div>
+
+<script>
+    // Tracking Function for "Subscribe"
+    const subButtons = document.querySelectorAll('.sub-btn');
+
+    subButtons.forEach(btn => {
+        btn.addEventListener('click', function() {
+            // Facebook "Subscribe" Event
+            if (typeof fbq !== 'undefined') {
+                fbq('track', 'Subscribe');
+                console.log("FB Event: Subscribe Tracked!");
+            }
+
+            // Button Visual Feedback
+            this.style.background = '#2ecc71';
+            this.innerHTML = '<i class="fas fa-check"></i> Redirecting...';
+        });
+    });
+</script>
+
+</body>
+</html
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VIP TRADER - Telegram Join</title>
+    <title>VIP TRADER - Join Telegram</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-XXXXXXXXXX');
-    </script>
-
-      <!-- Meta Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '4194964924087820');
-fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=4194964924087820&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Meta Pixel Code -->
+      !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+      n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+      document,'script','https://connect.facebook.net/en_US/fbevents.js');
+      
+      // Yahan apna Pixel ID daalein (Replace YOUR_PIXEL_ID)
+      fbq('init', 'YOUR_PIXEL_ID'); 
+      fbq('track', 'PageView');
     </script>
 
     <style>
         * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, sans-serif; }
         body { background-color: #f0f2f5; display: flex; justify-content: center; align-items: center; min-height: 100vh; padding: 20px; }
         
-        .card { background: white; width: 100%; max-width: 450px; border-radius: 20px; padding: 30px; text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.1); position: relative; overflow: hidden; }
+        .card { background: white; width: 100%; max-width: 450px; border-radius: 20px; padding: 30px; text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.1); border-top: 5px solid #54a0ff; }
         
         .logo-circle { width: 100px; height: 100px; background: black; border-radius: 50%; margin: 0 auto 15px; display: flex; flex-direction: column; align-items: center; justify-content: center; color: #f1c40f; font-weight: bold; border: 4px solid #fff; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
         
@@ -50,27 +67,25 @@ src="https://www.facebook.com/tr?id=4194964924087820&ev=PageView&noscript=1"
             background: #54a0ff; 
             color: white !important; 
             text-decoration: none; 
-            padding: 15px; 
+            padding: 16px; 
             border-radius: 12px; 
             font-weight: bold; 
             font-size: 18px; 
             margin: 15px 0;
             transition: 0.3s;
             box-shadow: 0 4px 10px rgba(84, 160, 255, 0.3);
-            animation: moveInOut 1.5s infinite ease-in-out;
+            animation: pulseEffect 1.5s infinite ease-in-out;
             border: none;
             cursor: pointer;
-            width: 100%;
         }
 
-        @keyframes moveInOut {
+        @keyframes pulseEffect {
             0% { transform: scale(1); }
-            50% { transform: scale(1.05); }
+            50% { transform: scale(1.03); box-shadow: 0 8px 20px rgba(84, 160, 255, 0.5); }
             100% { transform: scale(1); }
         }
 
         .btn:hover { background: #2e86de; animation-play-state: paused; }
-        .btn:active { transform: scale(0.95); }
 
         .tags-container { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; margin: 20px 0; }
         .tag { padding: 6px 15px; border-radius: 20px; font-size: 11px; font-weight: bold; color: white; }
@@ -78,10 +93,7 @@ src="https://www.facebook.com/tr?id=4194964924087820&ev=PageView&noscript=1"
         .tag-black { background: #2d3436; }
         .tag-green { background: #27ae60; }
 
-        .footer-info { font-size: 12px; color: #888; margin-top: 20px; border-top: 1px solid #eee; padding-top: 15px; }
-        
-        /* Success message style */
-        #status-msg { font-size: 13px; color: #27ae60; display: none; margin-top: -10px; margin-bottom: 10px; font-weight: bold; }
+        .footer-info { font-size: 11px; color: #999; margin-top: 20px; }
     </style>
 </head>
 <body>
@@ -94,67 +106,17 @@ src="https://www.facebook.com/tr?id=4194964924087820&ev=PageView&noscript=1"
 
     <h1>VIP TRADER <i class="fas fa-check-circle verified"></i></h1>
     <p class="subscribers"><i class="fas fa-users"></i> 78,127 subscribers</p>
-    
-    <p style="font-size: 14px;">📊 Exclusive insights & daily tips</p>
 
-    <div id="status-msg">Redirecting to Telegram...</div>
-    <a href="https://t.
-        me/+MyCVbQMZAGpjYWY1" target="_blank" class="btn join-btn">
-        <i class="fab fa-telegram-plane"></i> JOIN TELEGRAM CHANNEL
+    <a href="https://t.me/+MyCVbQMZAGpjYWY1" target="_blank" class="btn sub-btn">
+        <i class="fab fa-telegram-plane"></i> SUBSCRIBE & JOIN NOW
     </a>
 
-    <p style="font-weight: bold; font-size: 13px;">
-        🔥 <span style="color: #d63031;">INTRADAY</span> | <span style="color: #0984e3;">OPTIONS</span> | <span style="color: #27ae60;">SWING ANALYSIS</span>
+    <p style="font-weight: bold; font-size: 13px; margin: 10px 0;">
+        🔥 <span style="color: #d63031;">INTRADAY</span> | <span style="color: #0984e3;">OPTIONS</span> | <span style="color: #27ae60;">SWING</span>
     </p>
 
     <div class="tags-container">
         <span class="tag tag-red">NIFTY 50</span>
-        <span class="tag tag-red">BANKNIFTY</span>
-        <span class="tag tag-black">INTRADAY</span>
-        <span class="tag tag-black">OPTIONS</span>
-        <span class="tag tag-green">SWING TRADE</span>
+        <span class="tag tag-black">BANKNIFTY</span>
+        <span class="tag tag-green">90% ACCURACY</span>
     </div>
-
-    <p style="font-size: 14px; color: #27ae60; font-weight: bold;">
-        ✅ Learn, Analyse & Grow
-    </p>
-
-    <a href="https://t.me/+MyCVbQMZAGpjYWY1" target="_blank" class="btn join-btn">
-        <i class="fab fa-telegram-plane"></i> JOIN FREE TELEGRAM CHANNEL
-    </a>
-
-    <p style="font-size: 11px; color: #999;">If you have Telegram, you can view and join this channel right away.</p>
-</div>
-
-<script>
-    // Function to handle tracking and visual feedback
-    const joinButtons = document.querySelectorAll('.join-btn');
-    const statusMsg = document.getElementById('status-msg');
-
-    joinButtons.forEach(button => {
-        button.addEventListener('click', function(e) {
-            // 1. Send Event to Facebook Pixel
-            if (typeof fbq !== 'undefined') {
-                fbq('track', 'Lead', { content_name: 'Telegram Join' });
-            }
-
-            // 2. Send Event to Google Analytics
-            if (typeof gtag !== 'undefined') {
-                gtag('event', 'conversion', {
-                    'event_category': 'Engagement',
-                    'event_label': 'Telegram Subscribe'
-                });
-            }
-
-            // 3. Visual Feedback
-            statusMsg.style.display = 'block';
-            this.style.background = '#27ae60';
-            this.innerHTML = '<i class="fas fa-check"></i> OPENING TELEGRAM...';
-            
-            console.log("Event Tracked: Subscribe/Subscriber");
-        });
-    });
-</script>
-
-</body>
-</html>
