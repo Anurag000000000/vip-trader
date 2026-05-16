@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VIP TRADER - Telegram Join</title>
+    <title>Tennis King</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-       <!-- Meta Pixel Code -->
+    <!-- Meta Pixel Code -->
 <script>
 !function(f,b,e,v,n,t,s)
 {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -15,115 +15,248 @@ n.queue=[];t=b.createElement(e);t.async=!0;
 t.src=v;s=b.getElementsByTagName(e)[0];
 s.parentNode.insertBefore(t,s)}(window, document,'script',
 'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '2022089178656561');
+fbq('init', '1998318514094540');
 fbq('track', 'PageView');
 </script>
 <noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=2022089178656561&ev=PageView&noscript=1"
+src="https://www.facebook.com/tr?id=1998318514094540&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Meta Pixel Code -->
-    </script>
-
     <style>
-        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, sans-serif; }
-        body { background-color: #f0f2f5; display: flex; justify-content: center; align-items: center; min-height: 100vh; padding: 20px; }
-        
-        .card { background: white; width: 100%; max-width: 450px; border-radius: 20px; padding: 30px; text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
-        
-        /* Logo Styling */
-        .logo-circle { width: 100px; height: 100px; background: black; border-radius: 50%; margin: 0 auto 15px; display: flex; flex-direction: column; align-items: center; justify-content: center; color: #f1c40f; font-weight: bold; border: 4px solid #fff; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
-        
-        h1 { font-size: 24px; color: #333; margin-bottom: 5px; }
-        .verified { color: #3897f0; font-size: 18px; }
-        .subscribers { color: #666; font-size: 15px; margin-bottom: 15px; }
-        
-        /* Button Style & Animation */
-        .btn { 
-            display: block; 
-            background: #54a0ff; 
-            color: white; 
-            text-decoration: none; 
-            padding: 15px; 
-            border-radius: 12px; 
-            font-weight: bold; 
-            font-size: 18px; 
-            margin: 15px 0;
-            transition: 0.3s;
-            box-shadow: 0 4px 10px rgba(84, 160, 255, 0.3);
-            /* Animation yahan hai */
-            animation: moveInOut 1.5s infinite ease-in-out;
+        /* Base Styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
         }
 
-        /* In-Out Movement (Pulse Effect) */
-        @keyframes moveInOut {
-            0% { transform: scale(1); }
-            50% { transform: scale(1.05); } /* Thoda bada */
-            100% { transform: scale(1); }    /* Wapas normal */
+        body {
+            background-color: #000;
+            /* Dark Grid Background Effect */
+            background-image: 
+                linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+            background-size: 30px 30px;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+            padding: 40px 20px;
         }
 
-        .btn:hover { background: #2e86de; animation-play-state: paused; } /* Hover par animation ruk jayegi */
+        .container {
+            width: 100%;
+            max-width: 420px;
+            text-align: center;
+            /* Central Glow Effect */
+            background: radial-gradient(circle at center, #1a1a00 0%, #000 80%);
+            padding: 20px;
+            border-radius: 25px;
+        }
 
-        .tags-container { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; margin: 20px 0; }
-        .tag { padding: 6px 15px; border-radius: 20px; font-size: 11px; font-weight: bold; color: white; }
-        .tag-red { background: #d63031; }
-        .tag-black { background: #2d3436; }
-        .tag-green { background: #27ae60; }
+        /* Profile Section */
+        .profile-wrapper {
+            margin-bottom: 20px;
+            position: relative;
+            display: inline-block;
+        }
 
-        .footer-info { font-size: 12px; color: #888; margin-top: 20px; border-top: 1px solid #eee; padding-top: 15px; }
+        .profile-img {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            border: 4px solid #ccff00;
+            box-shadow: 0 0 25px #ccff0066;
+            object-fit: cover;
+            background: #222; /* Placeholder color */
+        }
+
+        h1 {
+            color: #ffcc00;
+            font-size: 32px;
+            font-weight: 800;
+            margin-bottom: 8px;
+            letter-spacing: 1px;
+        }
+
+        .members-count {
+            color: #ffcc00;
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+
+        /* Badges */
+        .badge-row {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            margin-bottom: 30px;
+        }
+
+        .badge {
+            padding: 6px 16px;
+            border-radius: 25px;
+            font-size: 13px;
+            font-weight: 600;
+            background: rgba(0,0,0,0.5);
+        }
+
+        .badge-elite { border: 1px solid #ffcc00; color: #ffcc00; }
+        .badge-live { border: 1px solid #ff3300; color: #ff3300; }
+
+        /* Stats Cards */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 12px;
+            margin-bottom: 30px;
+        }
+
+        .card {
+            background: #0d0d0d;
+            border: 1px solid #222;
+            padding: 18px 5px;
+            border-radius: 12px;
+            transition: transform 0.3s;
+        }
+
+        .card:nth-child(2) { border-color: #ff444466; } /* Middle card highlight */
+
+        .val { font-size: 20px; font-weight: 800; display: block; margin-bottom: 4px; }
+        .yellow-text { color: #ffcc00; }
+        .red-text { color: #ff4444; }
+        .label { font-size: 12px; color: #888; text-transform: capitalize; }
+
+        /* --- THE UNDER-BAHAR ANIMATED BUTTON --- */
+        @keyframes move-in-out {
+            0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(34, 139, 34, 0.4); }
+            50% { transform: scale(1.06); box-shadow: 0 0 25px 5px rgba(34, 139, 34, 0.2); }
+            100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(34, 139, 34, 0); }
+        }
+        .tg-button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            background: linear-gradient(90deg, #2e7d32 0%, #c62828 100%);
+          color: white;
+            text-decoration: none;
+            padding: 18px;
+            border-radius: 15px;
+            font-size: 20px;
+            font-weight: 800;
+            margin-bottom: 35px;
+            /* Animation Trigger */
+            animation: move-in-out 1.5s infinite ease-in-out;
+            cursor: pointer;
+            border: none;
+        }
+
+        /* Features Section */
+        .features-grid {
+            border: 1px solid #333;
+            border-radius: 18px;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            padding: 22px 5px;
+            margin-bottom: 40px;
+            background: rgba(255,255,255,0.02);
+        }
+
+        .f-item i { font-size: 22px; margin-bottom: 8px; display: block; }
+        .f-item span { font-size: 11px; color: #999; font-weight: 500; }
+
+        .clr-green { color: #4caf50; }
+        .clr-yellow { color: #ffcc00; }
+        .clr-red { color: #ff4444; }
+
+        /* Footer */
+        .footer-info {
+            font-size: 12px;
+            color: #555;
+            line-height: 1.8;
+            letter-spacing: 0.5px;
+        }
+
+        .domain-link {
+            display: block;
+            margin-top: 25px;
+            color: #444;
+            text-decoration: none;
+            font-size: 14px;
+        }
     </style>
 </head>
 <body>
 
-<div class="card">
-    <div class="logo-circle">
-        <span style="font-size: 20px;">VIP</span>
-        <span style="font-size: 12px; letter-spacing: 2px;">TRADER</span>
+<div class="container">
+    <div class="profile-wrapper">
+        <img src="logo.png" alt="Jia Sharma" class="profile-img">
     </div>
 
-    <h1>VIP TRADER <i class="fas fa-check-circle verified"></i></h1>
-    <p class="subscribers">78,127 subscribers</p>
+    <h1>🏏Tennis King </h1>
     
-    <p style="font-size: 14px;">📊 Exclusive insights & daily tips</p>
-
-    <a href="https://t.me/+MyCVbQMZAGpjYWY1" class="btn sub-event">
-        <i class="fab fa-telegram-plane"></i> JOIN TELEGRAM CHANNEL
-    </a>
-
-    <p style="font-weight: bold; font-size: 13px;">
-        🔥 <span style="color: #d63031;">INTRADAY</span> | <span style="color: #0984e3;">OPTIONS</span> | <span style="color: #27ae60;">SWING ANALYSIS</span>
-    </p>
-
-    <div class="tags-container">
-        <span class="tag tag-red">NIFTY 50</span>
-        <span class="tag tag-red">BANKNIFTY</span>
-        <span class="tag tag-black">INTRADAY</span>
-        <span class="tag tag-black">OPTIONS</span>
-        <span class="tag tag-green">SWING TRADE</span>
+    <div class="members-count">
+        <i class="fas fa-users"></i> 30K+ Active Members
     </div>
 
-    <p style="font-size: 14px; color: #27ae60; font-weight: bold;">
-        ✅ Learn, Analyse & Grow
-    </p>
+    <div class="badge-row">
+        <div class="badge badge-elite">🏆 Elite Analyst</div>
+        <div class="badge badge-live">⚡️ Live Updates</div>
+    </div>
 
-    <a href="https://t.me/+MyCVbQMZAGpjYWY1" class="btn sub-event">
-        <i class="fab fa-telegram-plane"></i> JOIN FREE TELEGRAM CHANNEL
+    <div class="stats-grid">
+        <div class="card">
+            <span class="val yellow-text">25,892</span>
+            <span class="label">Match Tips</span>
+        </div>
+        <div class="card">
+            <span class="val red-text">99%</span>
+            <span class="label">Win Rate</span>
+        </div>
+        <div class="card">
+            <span class="val yellow-text">4.9★</span>
+            <span class="label">Rating</span>
+        </div>
+    </div>
+
+    <a href="https://t.me/+N7UmtjsCka5hNDhl" class="tg-button" onclick="fbq('track', 'Subscribe', {value: 0.00, currency: 'INR'});">
+        <i class="fab fa-telegram-plane"></i> Join Telegram Channel
     </a>
 
-    <p style="font-size: 11px; color: #999;">If you have Telegram, you can view and join this channel right away.</p>
+    <div class="features-grid">
+        <div class="f-item">
+            <i class="far fa-check-circle clr-green"></i>
+            <span>Verified</span>
+        </div>
+        <div class="f-item">
+            <i class="fas fa-lock clr-yellow"></i>
+            <span>Secure</span>
+        </div>
+        <div class="f-item">
+            <i class="fas fa-chart-line clr-red"></i>
+            <span>Profitable</span>
+        </div>
+        <div class="f-item">
+            <i class="far fa-star clr-yellow"></i>
+            <span>Top Rated</span>
+        </div>
+    </div>
 
-<div class="footer-info"></div>
+    <div class="footer-info">
+        © 2015 Tennis King . All rights reserved.<br>
+        <i class="fas fa-cricket-bat-ball" style="font-size: 10px;"></i> Professional ,Tennis Analysis & Predictions
+    </div>
+
+    <a href="#" class="domain-link"></a>
 </div>
-
-<script>
-    document.querySelectorAll('.sub-event').forEach(function(button) {
-        button.addEventListener('click', function() {
-            if (typeof fbq !== 'undefined') {
-                fbq('track', 'Subscribe');
-                console.log('FB Subscribe Event Fired');
-            }
-        });
-    });
-</script>
 
 </body>
 </html>
